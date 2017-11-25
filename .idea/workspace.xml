@@ -107,17 +107,6 @@
               <item name="firebase-learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="firebase-learning" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="firebase-learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firebase-learning" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="firebase-learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firebase-learning" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -172,11 +161,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511583446699</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1511583452894</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511583452894</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21076000" />
+    <option name="totallyTimeSpent" value="21089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
