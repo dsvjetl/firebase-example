@@ -19,4 +19,4 @@
 </ol>
 
 <h2>Use</h2>
-<p>Open app in 2 or more browsers / tabs via browsersync urls (internal or external urls (default: localhost:3000 [urls visible in terminal after starting dev server]) or webpack dev server link (default: localhost:8080) to see the real time changes across multiple browsers / tabs</p>
+<p>Open app in 2 or more browsers / tabs via browsersync internal or external urls (default: localhost:3000 [urls visible in terminal after starting dev server]) or webpack dev server link (default: localhost:8080) to see the real time changes across multiple browsers / tabs</p>
