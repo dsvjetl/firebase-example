@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="input-text" type="text">
+    <button id="submitFirebase">Add to firebase</button>
+
+    <pre id="object">
+
+    </pre>
+
+    <!-- JS imports -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDvSr5rAYcBrBxYflhmn1MLK-iA4u4MpBU",
+            authDomain: "test-74e9f.firebaseapp.com",
+            databaseURL: "https://test-74e9f.firebaseio.com/",
+            projectId: "test-74e9f",
+            storageBucket: "",
+            messagingSenderId: "735813369236"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
