@@ -1,4 +1,4 @@
-# WEBPACK_ACADEMY_START-KIT
+# FIREBASE SIMPLE EXAMPLE
 
 <h2>This start-kit includes: </h2>
 <ol>
@@ -9,7 +9,7 @@
     <li>Webpack & Webpack Dev Server</li>
 </ol>
 
-<h2>Tutorial</h2>
+<h2>Install / start tutorial</h2>
 <ol>
     <li>Clone or download the repository</li>
     <li>NPM install ("npm i" in terminal) to download & install node_modules</li>
@@ -17,4 +17,9 @@
     <li>Type "npm run watch" to start webpack --watch & browsersync || dev mode for multi device testing</li>
     <li>Type "npm run build" to build bundle.js in dist/ folder || production deployment</li>
 </ol>
+
+<h2>Use</h2>
+<p>Open app in 2 or more tabs/browsers via internal or external Browsersync urls to see the real time changes</p>
+<p>It uses same non-auth firebase real-time database</p>
+
 # firebase-example
