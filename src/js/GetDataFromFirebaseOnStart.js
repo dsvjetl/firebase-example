@@ -1,3 +1,5 @@
+import DeleteFromFirebase from './DeleteFromFirebase';
+
 export default class GetDataFromFirebaseOnStart {
     /**
      *
@@ -17,6 +19,10 @@ export default class GetDataFromFirebaseOnStart {
     }
 
     // Getters //
+
+    get deleteFromFirebase() {
+        return new DeleteFromFirebase();
+    }
 
     /**
      *
@@ -49,12 +55,10 @@ export default class GetDataFromFirebaseOnStart {
         return new Promise((resolve, reject) => {
             this.firebaseRef.child(this.dataGetterName).on('value', data => {
 
-                console.log('firebase:', data.val());
-
                 if (data) {
 
                     this.getFirebaseNamesToDOM(data.val());
-                    resolve();
+                    const deleteFromFirebase = this.deleteFromFirebase;
 
                 }
                 else {
@@ -71,10 +75,10 @@ export default class GetDataFromFirebaseOnStart {
         const names = [];
 
         for (const key in namesObj) {
-            names.push(namesObj[key]);
+            names.push({value: namesObj[key], key});
         }
 
-        this.dataFillElement.innerHTML = names.map(name => `<p>${name} <button class="remove-firebase-object">x</button></p>`).join('');
+        this.dataFillElement.innerHTML = names.map(name => `<p data-key="${name.key}">${name.value} <button class="remove-firebase-object">x</button></p>`).join('');
 
     }
 }

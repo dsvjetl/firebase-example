@@ -59,8 +59,9 @@ export default class AddToFirebase {
 
         this.clickElement.addEventListener('click', () => {
 
-            this.inputTag.innerText = '';
             this.addValuesToDB();
+
+            this.inputTag.value = '';
 
         });
 

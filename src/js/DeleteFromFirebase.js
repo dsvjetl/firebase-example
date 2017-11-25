@@ -7,9 +7,14 @@ export default class DeleteFromFirebase {
 
     init() {
 
+        this.getElementOnClick();
     }
 
     // Getters //
+
+    get inputText() {
+        return document.querySelector('#input-text');
+    }
 
     /**
      *
@@ -37,16 +42,18 @@ export default class DeleteFromFirebase {
 
     // Methods //
 
-    // this method was sent to GetDataFromrirebaseOnStart module class
     getElementOnClick() {
 
+        // Appended paragraphs deletion
         this.deleteBtns.forEach(deleteBtn => {
 
             deleteBtn.addEventListener('click', ev => {
 
                 const btnParentToDelete = ev.currentTarget.parentElement;
 
-                this.deleteElFromFirebase(this.returnDeleteElementKey(btnParentToDelete));
+                this.deleteFromDOM(this.returnDeleteElementKey(btnParentToDelete));
+
+                this.inputText.value = '';
 
             });
 
@@ -59,14 +66,13 @@ export default class DeleteFromFirebase {
 
         });
 
-
     }
 
     returnDeleteElementKey(el) {
         return el.dataset.key;
     }
 
-    deleteElFromFirebase(key) {
+    deleteFromDOM(key) {
         this.databaseRef.child('names').child(key).remove();
     }
 
