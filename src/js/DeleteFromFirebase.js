@@ -12,6 +12,10 @@ export default class DeleteFromFirebase {
 
     // Getters //
 
+    /**
+     *
+     * @returns {Element}
+     */
     get inputText() {
         return document.querySelector('#input-text');
     }
@@ -68,6 +72,11 @@ export default class DeleteFromFirebase {
 
     }
 
+    /**
+     *
+     * @param el {Element}
+     * @returns {String}
+     */
     returnDeleteElementKey(el) {
         return el.dataset.key;
     }

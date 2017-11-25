@@ -20,6 +20,10 @@ export default class GetDataFromFirebaseOnStart {
 
     // Getters //
 
+    /**
+     *
+     * @returns {DeleteFromFirebase}
+     */
     get deleteFromFirebase() {
         return new DeleteFromFirebase();
     }
